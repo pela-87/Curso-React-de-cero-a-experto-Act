@@ -1,4 +1,4 @@
-import { heroes, type Hero } from '../data/heroes.data';
+import { heroes, type Hero, Owner } from '../data/heroes.data';
 //el type se coloca para indicar que solo se importa el tipo de dato y no el objeto en si.
 
 //se puede colocar el undefined en el tipo de dato que retorna la funcion para que no de error
@@ -16,4 +16,18 @@ const getHeroById = ( id : number ) : Hero | undefined => {
     return hero;
 };
 
-console.log( getHeroById(6) );
+// console.log( getHeroById(6) );
+/*
+Tarea
+* getHeroesByOwner => Hero[]
+* Filtra heroes por propietario
+* @param Owner - El propietario por el cual filtrar (DC, Marvel), usar la enumeracion Owner.
+* @return Array de heroes pertenecientes al propietario especificado.
+*/
+
+export const getHeroByOwner = ( owner : Owner ) => {
+    const HeroByOwner = heroes.filter( hero => 
+        hero.owner === owner
+    );
+    return HeroByOwner
+};
