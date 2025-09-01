@@ -1,0 +1,61 @@
+Curso de React de cero a experto (08/2025)
+https://react.dev/learn
+
+Descargar hoja de atajos de React
+https://github.com/Klerith/mas-talento/blob/main/react/react-cheatsheet.pdf
+
+1) VSCode - Visual Studio Code
+https://code.visualstudio.com/
+
+	- Cursor AI
+	https://www.cursor.com/
+	- Windsurf
+	https://windsurf.com/editor
+
+2) Node.js
+https://nodejs.org/es
+
+3) Postman
+https://www.postman.com/downloads/
+
+4) Warp - Opcional
+https://app.warp.dev/referral/2KPGQV
+
+5) Docker Desktop
+https://www.docker.com/get-started/
+
+Extensiones de VSCode
+
+- Error Lens
+https://marketplace.visualstudio.com/items?itemName=usernamehw.errorlens
+
+- Better Comments
+https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments
+
+- ES7 React/Redux
+https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets
+
+- React Simle Snippets
+https://marketplace.visualstudio.com/items?itemName=burkeholland.simple-react-snippets
+
+- Auto Close Tag
+https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag
+
+- Paste JSON as Code
+https://marketplace.visualstudio.com/items?itemName=quicktype.quicktype
+
+- Backticks
+https://marketplace.visualstudio.com/items?itemName=fractalbrew.backticks
+
+Tema que estoy usando en VSCode, configuraciones y Wallpaper del curso:
+
+- Tokyo Night
+https://marketplace.visualstudio.com/items?itemName=enkia.tokyo-night
+
+- Iconos
+https://marketplace.visualstudio.com/items?itemName=BeardedBear.beardedicons
+
+Extras
+
+- Wallpapers Developer
+https://drive.google.com/drive/folders/1ItU8rbSGJjnh2USOBGwaCo9nYKifPJ6m?usp=sharing
