@@ -71,3 +71,18 @@ export default tseslint.config([
  <!-- 
  nmp install (node)
  -->
+
+ # Para realizar los test unitarios
+ <!--
+ npm install -D vitest
+
+ - scripts para el archivo package.json
+
+"scripts": {
+  "test": "vitest",
+  "test:ui": "vitest --ui",
+  "coverage": "vitest run --coverage"
+}
+
+
+ -->
