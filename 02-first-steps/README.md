@@ -84,5 +84,27 @@ export default tseslint.config([
   "coverage": "vitest run --coverage"
 }
 
+- Testing Library
+-- como estamos usuando typescript instalamos la siguiente linea
 
+npm install --save-dev @testing-library/react @testing-library/dom @types/react @types/react-dom
+
+- Se realizo la siguiente configuracion en el archivo vit.config.ts
+
+//import { defineConfig } from 'vite'
+import { defineConfig } from 'vitest/config'
+import react from '@vitejs/plugin-react-swc'
+
+// https://vite.dev/config/
+export default defineConfig({
+  plugins: [react()],
+  test: {
+    environment: 'jsdom',
+    globals: true,
+  }
+})
+
+- Al correr el comando npm run test, nos consulta si queremos instalar el 'jsdom' lo que colocamos Yes.
+
+- Al correr el comando npm run coverage, nos consulta si queremos instalar el 'coverage-v8' lo que colocamos Yes.
  -->

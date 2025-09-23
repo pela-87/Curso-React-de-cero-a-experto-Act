@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'vitest';
-import { add, multiply, subtract } from './math.helper';
+import { add, divide, multiply, subtract } from './math.helper';
 
 describe('Pruebas add', () => {
     test('should add two positives numbers', () => {
@@ -71,5 +71,21 @@ describe('Probando el multiply.', () => {
         const b = 5;
         const result = multiply( a , b);
         expect( result ).toBe(a * b);
+    });
+});
+
+describe('Probando el divide.', () => {
+    test('Se espera el resultado 0 al multiplicar.', () => {
+        const a = 0;
+        const b = 2;
+        const result = divide( a , b);
+        expect( result ).toBe(a / b);
+    });
+
+    test('Se espera el resultado positovo al dividir.', () => {
+        const a = 3;
+        const b = 5;
+        const result = divide( a , b);
+        expect( result ).toBe(a / b);
     });
 });

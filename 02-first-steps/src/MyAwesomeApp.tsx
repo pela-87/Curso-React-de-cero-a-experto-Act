@@ -11,7 +11,7 @@ Tarea
 
 import type { CSSProperties } from "react";
 
-const firstName = 'Jonatan';
+const firstName = ' Jonatan';
 const lastName = 'Villarruel';
 
 const favoriteGames = ['Mortal Kombat', 'Bomber-man','Sonic'];
@@ -36,14 +36,14 @@ const myStyles: CSSProperties = {
 export function MyAwesomeApp() {
 
     return (
-        <>
-            <h1>{ firstName }</h1>
+        <div data-testid="div-app">
+            <h1 data-testid="first-name-title">{ firstName }</h1>
             <h3>{ lastName }</h3>
 
-            <p>{favoriteGames.join(', ')}</p>
+            <p className="mi-class-favorita">{favoriteGames.join(', ')}</p>
 
             <p>{2 + 2}</p>
-            <h2>{isActive ? 'Activo' : 'No activo'}</h2>
+            <h1>{isActive ? 'Activo' : 'No activo'}</h1>
 
             {/* Esta es una forma de darle estilo */}
             {/* <p style={{
@@ -55,6 +55,6 @@ export function MyAwesomeApp() {
 
             {/* esta es otra forma, mejor vista */}
             <p style={myStyles}>{JSON.stringify(address)}</p>
-        </>
+        </div>
     )
 }
