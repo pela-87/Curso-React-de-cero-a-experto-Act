@@ -13,7 +13,7 @@ export const SearchBar = ({ placeholder= 'Buscar', onQuery}: Props ) => {
     const timeoutId = setTimeout(() => {
       onQuery(query);
       setQuery('');
-    }, 900)
+    }, 2000)
     
     return () => {
       clearTimeout(timeoutId);
