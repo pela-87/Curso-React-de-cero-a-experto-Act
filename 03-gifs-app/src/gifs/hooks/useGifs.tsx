@@ -22,6 +22,7 @@ import type { Gif } from '../interfaces/gif.interface';
     
         const gifs = await getGifsByQuery(term);
         setGifs(gifs);
+        gifsCache.current[term] = gifs;
     };
 
     const handleSearch = async (query: string = '') => {
@@ -41,10 +42,10 @@ import type { Gif } from '../interfaces/gif.interface';
     return {
         //Properties
         gifs,
+        previousTerms,
 
         //Methods
         handleSearch,
-        previousTerms,
         handleTermClicked,
     };
 };

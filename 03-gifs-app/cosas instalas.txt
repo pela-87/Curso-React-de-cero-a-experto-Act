@@ -1,3 +1,40 @@
 Extensiones que fui instalando.
 
 npm i axios
+
+Instalar dependencias Testing
+#1 Vitest
+npm install --save-dev vitest jsdom
+
+#2 React Testing Library
+npm install --save-dev @testing-library/react @testing-library/dom
+
+# Todo en un sólo comando
+npm install --save-dev @testing-library/react @testing-library/dom vitest jsdom
+
+#3 Crear estos scripts en el package.json
+"scripts": {
+  "test": "vitest",
+  "test:ui": "vitest --ui",
+  "coverage": "vitest run --coverage"
+}
+
+#4 Configurar vite.config.ts
+import { defineConfig } from 'vitest/config';
+import react from '@vitejs/plugin-react-swc';
+
+// https://vite.dev/config/
+export default defineConfig({
+  plugins: [react()],
+  test: {
+    environment: 'jsdom',
+    globals: true,
+  },
+});
+
+#5 Instalacion de axios-mock-adapter para realizar peticiones http en testing
+npm install axios-mock-adapter --save-dev
+
+#6 se instala el coverage para evaluar la covertura.
+nmp run coverage
+nos va a preguntar si deseamos instalarlo, le indicamos que yes.
