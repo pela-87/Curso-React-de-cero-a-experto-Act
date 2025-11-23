@@ -1,0 +1,26 @@
+/*
+Aca iran las instalaciones que voy a ir realizando
+para este proyecyo.
+*/
+
+/*
+#Tailwindcss
+npm install tailwindcss @tailwindcss/vite
+
+#Configuracion
+Vite.config.ts
+
+import { defineConfig } from 'vite'
+import tailwindcss from '@tailwindcss/vite'
+export default defineConfig({
+  plugins: [
+    tailwindcss(),
+  ],
+})
+
+#Importar estilo en archivo index.css
+
+@import "tailwindcss";
+
+
+*/
